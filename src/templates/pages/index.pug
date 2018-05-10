@@ -1,0 +1,285 @@
+extends ../template
+
+block variables
+    - var title = 'Switch'
+
+block content
+    .wrapper
+        .content
+            section.welcome
+                header.header
+                    nav.nav
+                        ul.nav__list
+                            li.nav__item.nav__item--active
+                                a.nav__link Home
+                            li.nav__item
+                                a.nav__link What we do?
+                            li.nav__item
+                                a.nav__link Testimonial
+                            li.nav__item
+                                a.nav__link Contact Us
+                    .title Switch
+                    .search
+                        form.search__field 
+                            input(type="text", placeholder='Search...')
+                            button(type="submit") #[i.fa.fa-search]
+                .center 
+                    .phrase Art is Eternal Happiness
+                    button.btn Work with us
+                .down
+                    a.down__btn(href="#") scroll down #[i.fa.fa-arrow-down]
+            section.about
+                .about-text
+                    .about-text__title What we do
+                    p.about-text__desc Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
+                .do
+                    ul.do__list
+                        li.do__item
+                            .do__item-pic
+                                img.do__item-img(src="assets/images/Forma 1.png")
+                            .do__item-title Lorem Ipsum
+                            .do__item-desc This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                            button.do__item-more Learn more
+                        li.do__item
+                            .do__item-pic
+                                img.do__item-img(src="assets/images/Forma 2.png")
+                            .do__item-title Lorem Ipsum
+                            .do__item-desc This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                            button.do__item-more Learn more
+                        li.do__item
+                            .do__item-pic
+                                img.do__item-img(src="assets/images/Forma 3.png")
+                            .do__item-title Lorem Ipsum
+                            .do__item-desc This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                            button.do__item-more Learn more
+            section.work
+                .about-text
+                    .about-text__title.about-text__title--green Our latest work
+                    p.about-text__desc.about-text__desc--green Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
+                .tabs_box
+                    ul.tabs_box__menu   
+                        li.tabs_box__item.tabs_box__item--active
+                            a.tabs_box__link.tabs_box__link--active(href="#tab1") Photography
+                        li.tabs_box__item
+                            a.tabs_box__link(href="#tab2") Design
+                        li.tabs_box__item
+                            a.tabs_box__link(href="#tab3") Print
+                    .tab(id="tab1")
+                        ul.tab__content 
+                            li.tab__content-item
+                                img.tab__content-pic(src="assets/images/tabs_content/1.jpg")
+                            li.tab__content-item
+                                img.tab__content-pic(src="assets/images/tabs_content/2.jpg")
+                            li.tab__content-item
+                                img.tab__content-pic(src="assets/images/tabs_content/3.jpg")
+                            li.tab__content-item
+                                img.tab__content-pic(src="assets/images/tabs_content/4.jpg")
+                            li.tab__content-item
+                                img.tab__content-pic(src="assets/images/tabs_content/5.jpg")
+                            li.tab__content-item
+                                img.tab__content-pic(src="assets/images/tabs_content/6.jpg")
+                            li.tab__content-item
+                                img.tab__content-pic(src="assets/images/tabs_content/7.jpg")
+                            li.tab__content-item
+                                img.tab__content-pic(src="assets/images/tabs_content/8.jpg")
+                            li.tab__content-item
+                                img.tab__content-pic(src="assets/images/tabs_content/9.jpg")
+                            li.tab__content-item
+                                img.tab__content-pic(src="assets/images/tabs_content/10.jpg")
+                    .tab(id="tab2")
+                    .tab(id="tab3")
+                button.btn__more View more work #[i.fa.fa-arrow-right]
+            section.feedback
+                .top
+                    .about-text
+                        .about-text__title Testimonials
+                        p.about-text__desc Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
+                    .slider
+                        .slide1
+                            .feedback__text “Awalnya saya tidak menderita penyakit apapun, namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan tidak menderita penyakit apapun!”
+                            .feedback__who
+                                img.feedback__pic(src="assets/images/face.png", alt="")
+                                .feedback__name
+                                    .feedback__title Mr. Herp
+                                    .feedback__occ CEO of Meme, Inc.
+                        .slide2
+                        .slide3
+                .bottom
+                    .about-text
+                        .about-text__title Our happy clients
+                        p.about-text__desc Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
+                    .companies
+                        ul.companies__content 
+                            li.companies__content-item
+                                img.companies__content-pic(src="assets/images/companies/google.png")
+                            li.companies__content-item
+                                img.companies__content-pic(src="assets/images/companies/yahoo.png")
+                            li.companies__content-item
+                                img.companies__content-pic(src="assets/images/companies/MSFT.png")
+                            li.companies__content-item
+                                img.companies__content-pic(src="assets/images/companies/intel.png")
+                            li.companies__content-item
+                                img.companies__content-pic(src="assets/images/companies/quallcomm.png")
+                            li.companies__content-item
+                                img.companies__content-pic(src="assets/images/companies/cisco.png")
+                            li.companies__content-item
+                                img.companies__content-pic(src="assets/images/companies/apple.png")
+                            li.companies__content-item
+                                img.companies__content-pic(src="assets/images/companies/asus.png")
+                    button.btn__more.btn__more--gray See all client #[i.fa.fa-arrow-right]
+            section.team
+                .team_top
+                    .about-text
+                        .about-text__title.about-text__title--green Testimonials
+                        p.about-text__desc.about-text__desc--green Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
+                    .ppl    
+                        ul.ppl__list
+                            li.ppl__item
+                                .ppl__ava
+                                    img.ppl__pic(src="assets/images/ppl/1.jpg", alt="")
+                                .ppl__name Krisna Wijaya
+                                .socials
+                                    ul.socials__list    
+                                        li.socials__item
+                                            a.socials__link 
+                                                img.socials__pic(src="assets/images/icons/dribbble.svg")
+                                        li.socials__item
+                                            a.socials__link
+                                                img.socials__pic(src="assets/images/icons/behance.svg")
+                                        li.socials__item
+                                            a.socials__link
+                                                img.socials__pic(src="assets/images/icons/twitter.svg")
+                            li.ppl__item
+                                .ppl__ava
+                                    img.ppl__pic(src="assets/images/ppl/2.jpg", alt="")
+                                .ppl__name Krisna Wijaya
+                                .socials
+                                    ul.socials__list    
+                                        li.socials__item
+                                            a.socials__link 
+                                                img.socials__pic(src="assets/images/icons/dribbble.svg")
+                                        li.socials__item
+                                            a.socials__link
+                                                img.socials__pic(src="assets/images/icons/behance.svg")
+                                        li.socials__item
+                                            a.socials__link
+                                                img.socials__pic(src="assets/images/icons/twitter.svg")
+                            li.ppl__item
+                                .ppl__ava
+                                    img.ppl__pic(src="assets/images/ppl/3.jpg", alt="")
+                                .ppl__name Krisna Wijaya
+                                .socials
+                                    ul.socials__list    
+                                        li.socials__item
+                                            a.socials__link 
+                                                img.socials__pic(src="assets/images/icons/dribbble.svg")
+                                        li.socials__item
+                                            a.socials__link
+                                                img.socials__pic(src="assets/images/icons/behance.svg")
+                                        li.socials__item
+                                            a.socials__link
+                                                img.socials__pic(src="assets/images/icons/twitter.svg")
+                            li.ppl__item
+                                .ppl__ava
+                                    img.ppl__pic(src="assets/images/ppl/4.jpg", alt="")
+                                .ppl__name Krisna Wijaya
+                                .socials
+                                    ul.socials__list    
+                                        li.socials__item
+                                            a.socials__link 
+                                                img.socials__pic(src="assets/images/icons/dribbble.svg")
+                                        li.socials__item
+                                            a.socials__link
+                                                img.socials__pic(src="assets/images/icons/behance.svg")
+                                        li.socials__item
+                                            a.socials__link
+                                                img.socials__pic(src="assets/images/icons/twitter.svg")
+                            li.ppl__item
+                                .ppl__ava
+                                    img.ppl__pic(src="assets/images/ppl/5.jpg", alt="")
+                                .ppl__name Krisna Wijaya
+                                .socials
+                                    ul.socials__list    
+                                        li.socials__item
+                                            a.socials__link 
+                                                img.socials__pic(src="assets/images/icons/dribbble.svg")
+                                        li.socials__item
+                                            a.socials__link
+                                                img.socials__pic(src="assets/images/icons/behance.svg")
+                                        li.socials__item
+                                            a.socials__link
+                                                img.socials__pic(src="assets/images/icons/twitter.svg")
+                .team_bottom
+                    button.btn.btn_shadow Work with us
+            section.contacts
+                .contacts-top
+                    .contacts__about
+                        .about-text
+                            .about-text__title.about-text__title--white About us
+                        .contacts__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Ut aliquam massa nisl quis neque. Suspendisse in orci enim.Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.
+                        .socials
+                            ul.socials__list    
+                                li.socials__item
+                                    a.socials__link 
+                                        img.socials__pic(src="assets/images/icons/dribbble.svg")
+                                li.socials__item
+                                    a.socials__link
+                                        img.socials__pic(src="assets/images/icons/behance.svg")
+                                li.socials__item
+                                    a.socials__link
+                                        img.socials__pic(src="assets/images/icons/twitter.svg")
+                    .contacts__posts
+                        .about-text
+                            .about-text__title.about-text__title--white Recent posts
+                        .post
+                            img.tab__content-pic.tab__content-pic--small(src="assets/images/tabs_content/6.jpg")
+                            .post__desc 
+                                .post__title Lorem Ipsum Dolor Sit Amet.
+                                .post__category.post__category--green Magazine
+                        .post
+                            img.tab__content-pic.tab__content-pic--small(src="assets/images/tabs_content/7.jpg")
+                            .post__desc 
+                                .post__title Lorem Ipsum Dolor Sit Amet.
+                                .post__category.post__category--yellow Ui design
+                        .post
+                            img.tab__content-pic.tab__content-pic--small(src="assets/images/tabs_content/8.jpg")
+                            .post__desc 
+                                .post__title Lorem Ipsum Dolor Sit Amet.
+                                .post__category.post__category--blue Photography
+                        .post
+                            img.tab__content-pic.tab__content-pic--small(src="assets/images/tabs_content/9.jpg")
+                            .post__desc 
+                                .post__title Lorem Ipsum Dolor Sit Amet.
+                                .post__category.post__category--red Book
+                        .post
+                            img.tab__content-pic.tab__content-pic--small(src="assets/images/tabs_content/10.jpg")
+                            .post__desc 
+                                .post__title Lorem Ipsum Dolor Sit Amet.
+                                .post__category.post__category--yellow Ui design
+                    .contacts__form
+                        .about-text
+                            .about-text__title.about-text__title--white Contact us
+                        .contacts__info
+                            p 10044 West 23th Street, Suite 721
+                            p New York NY 10010
+                            p Email: Username@email.com
+                            p Phone: +1 (0) 123 4567 890
+                            p Fax: +1 (0) 321 4567 890
+                        .form
+                            input.form__item(type="text" value="Your Name..")
+                            input.form__item(type="text" value="Your Email..")
+                            textarea.form__item(rows="5" placeholder="Your Message..")
+                            button.form__btn(type="submit") Send
+                .channels
+                    .about-text
+                        .about-text__title.about-text__title--black About us
+                    ul.channels__content 
+                        li.channels__content-item
+                            img.channels__content-pic(src="assets/images/channels/Cnn.png")
+                        li.channels__content-item
+                            img.channels__content-pic(src="assets/images/channels/Tc.png")
+                        li.channels__content-item
+                            img.channels__content-pic(src="assets/images/channels/BBC.png")
+                        li.channels__content-item
+                            img.channels__content-pic(src="assets/images/channels/Ny.png")
+                

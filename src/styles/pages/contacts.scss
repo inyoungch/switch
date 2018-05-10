@@ -1,0 +1,128 @@
+.contacts{
+    background: $dark-gray;
+    color: #cccccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-top{
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.about-text__title--white{
+
+    &::after{
+        background: #cccccc;
+    }
+}
+
+.post{
+    display: flex;
+}
+
+.post__title{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-style: normal;
+}
+
+.tab__content-pic--small{
+    width: 53px;
+    height: 53px;
+    margin-right: 7px;
+    margin-bottom: 12px;
+}
+
+.post__category{
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-style: normal;
+    color: $white;
+    font-size: 13px;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 0 2px;
+
+    &--green{
+        background: $green;
+    }
+    &--yellow{
+        background: #ffba00;
+    }
+    &--blue{
+        background: #089dea;
+    }
+    &--red{
+        background: #f34d04;
+    }
+}
+
+.contacts__info{
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+
+    & p{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__item{
+    background: rgba($gray, .5);
+    color: $gray;
+    font-family: 'Proxima';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.form__btn{
+    text-transform: uppercase;
+    font-size: 14px;
+    background: $green;
+    padding: 10px;
+}
+
+.channels{
+    background: #222222;
+    height: 100%;
+}
+
+.about-text__title--black{
+    color: #000000;
+
+    &::after{
+        background: #000000;
+    }
+}
+
+.channels__content{
+    display: grid;
+    grid-template-columns: 120px 120px 180px 350px;
+    grid-gap: 40px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.channels__content-item{
+    margin: 10px;
+}
+
+.channels__content-pic{
+    max-width: 80%;
+}
